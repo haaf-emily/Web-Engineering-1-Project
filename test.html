@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .banner-header {
+            order: 1; /* Ändert die Reihenfolge des Bildes */
+        }
+        .about-section {
+            order: 2; /* Ändert die Reihenfolge des Texts */
+            width: 100%;
+        }
+        img {
+            width: 50%;
+            height: auto;
+        }
+        @media (max-width: 100%) {
+            .container {
+                flex-direction: column-reverse; /* Ändert die Anordnung bei kleinem Bildschirm */
+        
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="banner-header">
+            <img src="3girlsRedHighlight.jpg" alt="Drei Mädchen, die lächeln und zusammen kochen/backen">
+        </header>
+        <section class="about-section">
+            <h1>ÜBER UNS</h1>
+            <p>Drei Mädels, ein Topf und jede Menge Geschmack!</p>
+            <p>Weitere Informationen über uns...</p>
+        </section>
+    </div>
+</body>
+</html>
