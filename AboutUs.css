@@ -1,14 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto;
     margin-bottom: auto;
 }
 .about-section {
     order: 1;
-    width: 100%;
+    width: auto;
     padding: 40px;
     text-align: center;
-    background-color: #c5efc5;
-    color: rgb(107, 4, 4);
+    background-color: #bdd4bd;
+    color: #DC143C;
     display: flex;
     flex-direction: row;
 }
@@ -31,7 +31,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #900e0e;
+    background-color: #DC143C;
     color: #ffffff;
     font-size: 14px;
     display: flex;
