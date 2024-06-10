@@ -1,11 +1,78 @@
+h4 {
+  text-align: center;
+}
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 7px; /* 5px rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 7px;
+  width: 33%;
+  height: 100%;
+  /* Neue Regel: Alle Karten haben die gleiche Höhe */
+  display: inline-block;
+  /* Neue Regel: Karten nebeneinander anzeigen */
+  vertical-align: top;
+  /* Neue Regel: Karten oben ausrichten */
+  overflow: hidden;
+  /* Neue Regel: Textüberlauf verhindern */
+  margin-bottom: 20px;
+  /* Neue Regel: Abstand zwischen den Karten */
+}
+
+/* Bild an die Größe der Karte anpassen */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px 7px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+  /* Innenabstand für den Text */
+  box-sizing: border-box;
+  /* Padding wird nicht zur Höhe hinzugefügt */
+  height: 100%;
+  /* Neue Regel: Alle Karten haben die gleiche Höhe */
+  display: flex;
+  /* Neue Regel: Flexbox verwenden */
+  flex-direction: column;
+  /* Neue Regel: Text vertikal anordnen */
+  justify-content: space-between;
+  /* Neue Regel: Text vertikal zentrieren */
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Beispiel: stärkerer Schatten */
+  transform: scale(1.03); /* Beispiel: Vergrößerung um 5% */
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* Hier deine spezifischen Anpassungen für kleine Bildschirme */
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+  /* Hier deine spezifischen Anpassungen für Tablets im Querformat */
+  .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+
+  /* Hier deine spezifischen Anpassungen für Tablets im Hochformat und kleine Desktops */
+  .card {
     width: 33%;
   }
-  
-  /* Add rounded corners to the top left and the top right corner of the image */
-  img {
-    border-radius: 7px 7px 0 0;
+}
+
+@media only screen and (min-width: 1201px) {
+
+  /* Hier deine spezifischen Anpassungen für größere Desktops */
+  .card {
+    width: 25%;
   }
+}
