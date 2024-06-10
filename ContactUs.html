@@ -36,5 +36,20 @@
             <button type="submit">Abschicken</button>
         </form>
     </div>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+            const privacy = document.getElementById("privacy").checked;
+
+            if (!name || !email || !message || !privacy) {
+                alert("Bitte füllen Sie alle Felder aus und akzeptieren Sie die Datenschutzerklärung.");
+            } else {
+                console.log("Formular erfolgreich abgeschickt!");
+            }
+        }
+    </script>
 </body>
 </html>
