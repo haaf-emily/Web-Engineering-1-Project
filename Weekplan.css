@@ -6,3 +6,23 @@ hr{
     border-bottom: none;
     border-color:darkgreen; 
 }
+/* Grundlegende Stile */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 4%;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h3 {
+    color: #16a085;
+    margin-left: 20px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #16a085;
+    margin: 10px 0;
+}
