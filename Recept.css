@@ -24,6 +24,16 @@ h2 {
     color: #009879;
     margin-bottom: 15px;
 }
+button {
+    background-color: #009879; /* Hintergrundfarbe des Buttons */
+    color: #fff; /* Textfarbe des Buttons */
+    border: none; /* Entfernt den Rahmen des Buttons */
+    padding: 0.5em 1em; /* Innenabstand des Buttons */
+    margin: 1em 1em 1em 0em ;
+    border-radius: 9px; /* Abgerundete Ecken des Buttons */
+    cursor: pointer; /* Zeigt an, dass der Button anklickbar ist */
+    transition: background-color 0.6s; /* Übergangseffekt für Hintergrundfarbe */
+}
 
 ol {
     list-style: none; /* Entfernt die Standard-Listensymbole */
