@@ -11,12 +11,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
-        <img src="/Picture/Recepts/lachs-lasagne-mit-spinat.png" alt="eine Postion Lachs Lasagne auf einem Teller mit etwas gün angerichtet."
-            style="width:100%">
+        <img src="/Picture/Recepts/lachs-lasagne-mit-spinat.png"
+            alt="Eine Postion Lachs Lasagne auf einem Teller mit etwas grün angerichtet." style="width:100%">
         <h1>Lachs-Lasagne mit Spinat</h1>
     </div>
     <div>
@@ -78,6 +79,8 @@
             </tr>
         </table>
     </div>
+    <div id="ingredients-list"></div>
+    <button onclick="exportToShoppingNote()">Zur Einkaufsliste hinzufügen</button>
     <div>
         <br />
         <br />
