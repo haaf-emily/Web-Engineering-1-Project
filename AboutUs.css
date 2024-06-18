@@ -10,7 +10,7 @@ body {
     background-color: #bdd4bd;
     color: #DC143C;
     display: flex;
-    flex-direction: row;
+    background-color: #bdd4bd;
     flex-direction: column;
     align-items:center;
 }
