@@ -3,22 +3,24 @@
 
 <head>
     <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture\Recepts\haehnchencurry-indisch-in-kokosnussmilch.png" alt="Indisches Hähnchencurry auf Reis"
             style="width:100%">
-        <h1> Indisches Hähnchencurry in Kokosnussmilch </h1>
+        <h1 id="rezept-titel"> Indisches Hähnchencurry in Kokosnussmilch </h1>
     </div>
     <div>
         <h2 class="Roboto">
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>4 EL</td>
                 <td>Öl</td>
@@ -81,6 +83,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button href="/html/ShoppingNote.html">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

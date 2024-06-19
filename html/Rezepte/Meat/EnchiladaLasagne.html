@@ -7,19 +7,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/mexikanische-enchilada-lasagne.png"
             alt="Mexikanische Enchilada-Lasagne mit Basilikum verfeinert" style="width:100%">
-        <h1>Mexikanische Enchilada-Lasagne</h1>
+        <h1 id="rezept-titel">Mexikanische Enchilada-Lasagne</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>350 g</td>
                 <td>Gemischtes Hackfleisch</td>
@@ -90,6 +91,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button href="/html/ShoppingNote.html">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

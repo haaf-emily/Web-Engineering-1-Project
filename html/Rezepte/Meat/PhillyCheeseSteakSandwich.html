@@ -7,19 +7,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/philly-cheese-steak-sandwich.png"
             alt="Philly Cheese Steak Sandwich angerichtet auf einem Holzbrett" style="width:100%">
-        <h1>Philly Cheese Steak Sandwich</h1>
+        <h1 id="rezept-titel">Philly Cheese Steak Sandwich</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>100 g</td>
                 <td>Champignons</td>
@@ -57,6 +58,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button href="/html/ShoppingNote.html">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

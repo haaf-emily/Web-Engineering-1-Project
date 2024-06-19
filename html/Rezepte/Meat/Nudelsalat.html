@@ -7,18 +7,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
-        <img src="/Picture/Recepts/nudelsalat.png" alt="Chili con Carne in einem Topf" style="width:100%">
-        <h1>Nudelsalat</h1>
+        <img src="/Picture/Recepts/nudelsalat.png" alt="Nudelsalat in einem Teller mit frischen Kräutern serviert." style="width:100%">
+        <h1 id="rezept-titel">Nudelsalat</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>500 g</td>
                 <td>Nudeln</td>
@@ -65,6 +66,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button href="/html/ShoppingNote.html">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

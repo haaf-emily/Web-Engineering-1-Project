@@ -7,18 +7,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/chili-con-carne.png" alt="Chili con Carne in einem Topf" style="width:100%">
-        <h1>Chili con Carne</h1>
+        <h1 id="rezept-titel">Chili con Carne</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>800 g</td>
                 <td>Rinderhackfleisch</td>
@@ -77,6 +78,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button href="/html/ShoppingNote.html">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

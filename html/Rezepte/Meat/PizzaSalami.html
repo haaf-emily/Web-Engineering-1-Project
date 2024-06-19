@@ -7,19 +7,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/pizza_salami.png" alt="Gnocchi-Spinat-Auflauf in Backform stehen auf einem Tisch"
             style="width:100%">
-        <h1>Pizza Salami</h1>
+        <h1 id="rezept-titel">Pizza Salami</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>200 g</td>
                 <td>Weizenmehl Type 550</td>
@@ -66,6 +67,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button href="/html/ShoppingNote.html">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

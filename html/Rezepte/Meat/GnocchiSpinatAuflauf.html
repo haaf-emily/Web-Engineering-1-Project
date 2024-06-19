@@ -7,19 +7,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/gnocchi-spinat-auflauf-mit-haehnchen-und-curry.png"
             alt="Gnocchi-Spinat-Auflauf in Backform stehen auf einem Tisch" style="width:100%">
-        <h1>Gnocchi-Spinat-Auflauf mit Hähnchen und Curry</h1>
+        <h1 id="rezept-titel">Gnocchi-Spinat-Auflauf mit Hähnchen und Curry</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>500 g</td>
                 <td>frische Gnocchi </td>
@@ -58,6 +59,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button href="/html/ShoppingNote.html">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />
