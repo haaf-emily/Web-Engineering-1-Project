@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #008000;
+}
+
+#sitemapContent {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sitemapContent ul {
+    list-style-type: disc;
+    padding: 0 0 0 3em; /* Erhöht den linken Abstand */
+}
+
+#sitemapContent ul li {
+    padding: 0.5em 0;
+    position: relative;
+}
+
+#sitemapContent ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#sitemapContent ul li a:hover {
+    color: #008000;
+}
+
+#sitemapContent ul ul {
+    list-style-type: circle;
+    padding-left: 60px; /* Erhöht den linken Abstand */
+}
+
+#sitemapContent ul ul li {
+    padding-left: 10px;
+}
+
+#sitemapContent ul ul ul {
+    list-style-type: square;
+    padding-left: 80px; /* Erhöht den linken Abstand */
+}
+
+#sitemapContent ul ul ul li {
+    padding-left: 10px;
+}
