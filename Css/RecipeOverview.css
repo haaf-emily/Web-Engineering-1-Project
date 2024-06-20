@@ -1,13 +1,16 @@
 body {
     background-color: #f4f4f4;
     color: #333;
-    font-family: Arial, sans-serif; /* Fügt eine allgemeine Schriftart hinzu */
+    font-family: Arial, sans-serif;
+    /* Fügt eine allgemeine Schriftart hinzu */
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     margin: 20px 0;
-    color: #444; /* Dunklere Schriftfarbe für Überschriften */
+    color: #444;
+    /* Dunklere Schriftfarbe für Überschriften */
 }
 
 .slideshow-container {
@@ -19,7 +22,8 @@ h1, h2 {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px; /* Vereinfacht das Padding */
+    padding: 10px;
+    /* Vereinfacht das Padding */
 }
 
 .slides-wrapper {
@@ -32,11 +36,15 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    flex: 1 1 calc(100% - 1%); /* Reduziert den Abstand zwischen den Karten */
-    margin-right: 0.5%; /* Reduziert den Abstand zwischen den Karten */
+    flex: 1 1 calc(100% - 1%);
+    /* Reduziert den Abstand zwischen den Karten */
+    margin-right: 0.5%;
+    /* Reduziert den Abstand zwischen den Karten */
     box-sizing: border-box;
-    border-radius: 10px; /* Fügt den Karten abgerundete Ecken hinzu */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Fügt den Karten einen leichten Schatten hinzu */
+    border-radius: 10px;
+    /* Fügt den Karten abgerundete Ecken hinzu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Fügt den Karten einen leichten Schatten hinzu */
 }
 
 .mySlides img {
@@ -44,7 +52,8 @@ h1, h2 {
     border-radius: 10px;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -69,7 +78,8 @@ h1, h2 {
     right: 10px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
 }
@@ -82,7 +92,8 @@ h1, h2 {
     bottom: 8px;
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Fügt einen Hintergrund hinzu, um den Text lesbarer zu machen */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fügt einen Hintergrund hinzu, um den Text lesbarer zu machen */
 }
 
 .numbertext {
@@ -104,7 +115,8 @@ h1, h2 {
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
 
@@ -114,24 +126,37 @@ h1, h2 {
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-button.prev, button.next {
+button.prev,
+button.next {
     border: none;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
-    color: #ffffff; /* White color for high contrast */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black background */
+    color: #ffffff;
+    /* White color for high contrast */
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    padding: 10px 20px; /* Add some padding */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    padding: 10px 20px;
+    /* Add some padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
 }
 
-button.prev:hover, button.next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker when hovered */
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker when hovered */
 }
 
 @media (min-width: 1201px) {
@@ -156,4 +181,11 @@ button.prev:hover, button.next:hover {
     .mySlides {
         flex: 1 0 100%;
     }
+
+    button.prev,
+    button.next {
+
+        display: none;
+    }
+
 }
