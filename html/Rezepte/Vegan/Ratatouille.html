@@ -3,21 +3,23 @@
 
 <head>
     <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/ratatouille.png" alt="Ratatouille angerichtet in einem Topf" style="width:100%">
-        <h1> Ratatouille </h1>
+        <h1 id="rezept-titel"> Ratatouille </h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>1/2</td>
                 <td>rote Paprika</td>
@@ -43,8 +45,8 @@
                 <td>Zwiebeln</td>
             </tr>
             <tr>
-            <td>3</td>
-            <td>Tomaten</td>
+                <td>3</td>
+                <td>Tomaten</td>
             </tr>
             <tr>
                 <td>1 Bund</td>
@@ -100,9 +102,11 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
     <div>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <h2>
             Zubereitung
         </h2>

@@ -3,21 +3,24 @@
 
 <head>
     <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
-        <img src="/Picture/Recepts/veganer-apfelkuchen-mit-zimtstreuseln.png" alt="Stück Apfelkuchen mit einer Portion Sahne auf einem Teller angerichtet." style="width:100%">
-        <h1> Veganer Apfelkuchen </h1>
+        <img src="/Picture/Recepts/veganer-apfelkuchen-mit-zimtstreuseln.png"
+            alt="Stück Apfelkuchen mit einer Portion Sahne auf einem Teller angerichtet." style="width:100%">
+        <h1 id="rezept-titel">Veganer Apfelkuchen</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>205 g</td>
                 <td>Margarine</td>
@@ -60,6 +63,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

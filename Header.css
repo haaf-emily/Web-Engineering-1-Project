@@ -1,0 +1,135 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); /* Schatten unter der ganzen Seite */
+}
+
+.logo {
+  font-size: 24px; /* Schriftgröße für den Platzhalter */
+}
+
+.home-link {
+  display: block; /* Block-Element, damit es unter dem Logo erscheint */
+  font-size: 14px; /* Schriftgröße für den Link */
+  margin-top: 5px; /* Abstand zwischen Logo und Link */
+  color: blue; /* Farbe des Links */
+  text-decoration: underline; /* Unterstreichung des Links */
+}
+
+.line-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  width: 20px; /* Breite der Striche */
+  height: 2px; /* Höhe der Striche */
+  background-color: black;
+  margin-bottom: 5px; /* Abstand zwischen den Strichen */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  margin-right: 20px; /* Abstand zwischen Navigation und Einkaufsliste */
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Navigationspunkte untereinander anordnen */
+  gap: 10px; /* Abstand zwischen den Navigationspunkten */
+}
+
+.navigation li {
+  margin: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.shopping-list,
+.weekly-plan {
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 150px; /* Maximalbreite der Blöcke */
+}
+
+.shopping-list h2,
+.weekly-plan h2 {
+  font-size: 16px; /* Schriftgröße anpassen */
+  margin: 0; /* Standardmäßigen Abstand entfernen */
+}
+
+.shopping-list {
+  margin-left: 20px; /* Abstand zwischen Navigation und Einkaufsliste */
+  margin-right: 20px; /* Abstand zwischen Einkaufsliste und Wochenplan */
+}
+
+.weekly-plan {
+  margin-right: 20px; /* Abstand zwischen Einkaufsliste und Wochenplan */
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: black;
+  margin-right: 10px; /* Abstand zwischen Linie und Text */
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+.circle {
+  width: 20px; /* Durchmesser der Kreise */
+  height: 20px;
+  border: 1px solid black; /* Grenzfarbe setzen */
+  border-radius: 50%;
+}
+
+.info {
+  text-align: center;
+}
+
+.number {
+  font-size: 18px;
+}
+
+.abbreviation {
+  font-size: 14px;
+}

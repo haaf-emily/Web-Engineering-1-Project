@@ -35,6 +35,10 @@ button {
     transition: background-color 0.6s; /* Übergangseffekt für Hintergrundfarbe */
 }
 
+button:hover {
+    background-color: hsl(155, 91%, 17%); /* Ändert die Hintergrundfarbe beim Überfahren mit der Maus */
+}
+
 ol {
     list-style: none; /* Entfernt die Standard-Listensymbole */
     counter-reset: item; /* Initialisiert den Zähler */
@@ -50,17 +54,17 @@ ol li {
 }
 
 ol li::before {
-    content: counter(item); /* Fügt die Nummerierung hinzu */
+    content: counter(item); 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    color: #009879; /* Farbe der Nummerierung */
+    color: #009879;
     display: inline-block;
-    width: 2em; /* Platz für die Nummerierung reservieren */
-    height: 2em; /* Höhe für den Kreis */
-    line-height: 1.5em; /* Zentriert die Zahl vertikal */
-    text-align: center; /* Zentriert die Zahl horizontal */
-    position: absolute; /* Positioniert das Pseudoelement absolut */
-    left: 0; /* Setzt das Pseudoelement am linken Rand des Listenelements */
+    width: 2em; 
+    height: 2em; 
+    line-height: 1.5em; 
+    text-align: center; 
+    position: absolute; 
+    left: 0; 
 }
 
 li {
@@ -138,32 +142,46 @@ img{
 
 /* Für kleine Bildschirme (Handys) */
 @media only screen and (max-width: 600px) {
-    /* Hier deine spezifischen Anpassungen für kleine Bildschirme */
+    body{
+       
+    }
+
     table {
-        min-width: 0; /* Tabellenbreite auf 100% setzen */
+        min-width: 0; 
     }
 }
 
 /* Für Tablets im Querformat */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-    /* Hier deine spezifischen Anpassungen für Tablets im Querformat */
+    body{
+    }
     table {
-        min-width: 0; /* Tabellenbreite auf 100% setzen */
+        min-width: 0; 
     }
 }
 
 /* Für Tablets im Hochformat und kleine Desktops */
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
-    /* Hier deine spezifischen Anpassungen für Tablets im Hochformat und kleine Desktops */
+    body{
+        margin-left:6% ;
+        margin-right: 6%;
+    }
     table {
-        min-width: 0; /* Tabellenbreite auf 100% setzen */
+        min-width: 0; 
     }
 }
 
 /* Für größere Desktops */
 @media only screen and (min-width: 1201px) {
-    /* Hier deine spezifischen Anpassungen für größere Desktops */
+    body{
+        margin-left: 20% ;
+        margin-right: 20%;
+    }
     table {
-        min-width: 0; /* Tabellenbreite auf 100% setzen */
+        min-width: 0; 
+    }
+    img{
+        height: 80%;
+
     }
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezepte Webseite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Logo</a>
+            </div>
+            <nav class="main-nav">
+                <div class="nav-section">
+                    <ul class="nav-links">
+                        <li><a href="#">Infos</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Wochenplan</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <ul class="nav-links">
+                        <li><a href="#">Fleischgerichte</a></li>
+                        <li><a href="#">Schnelle Gerichte</a></li>
+                        <li><a href="#">Vegetarische Gerichte</a></li>
+                        <li><a href="#">Vegane Gerichte</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Beispiel-Inhalt -->
+    <div class="content">
+        <!-- Hier kann später der eigentliche Inhalt eingefügt werden -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <p>&copy; 2024 | Namen</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.recipe-card');
+
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.classList.add('hover');
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.classList.remove('hover');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

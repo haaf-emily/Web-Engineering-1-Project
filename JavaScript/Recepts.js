@@ -1,74 +1,45 @@
-function loadRecipeIngredients() {
-    const ingredientsList = document.getElementById('ingredients-list');
-    const tables = document.querySelectorAll('table');
+function addToShoppingList() {
+    const rezeptTitel = document.getElementById('rezept-titel').innerText;
+    const zutatenTabelle = document.getElementById('zutaten-tabelle').getElementsByTagName('tr');
+    let einkaufsliste = JSON.parse(localStorage.getItem('einkaufsliste')) || [];
 
-    tables.forEach(table => {
-        const recipeTitle = document.createElement('h2');
-        recipeTitle.textContent = table.previousElementSibling.textContent;
-        ingredientsList.appendChild(recipeTitle);
+    let zutaten = [];
+    for (let i = 0; i < zutatenTabelle.length; i++) {
+        const menge = zutatenTabelle[i].getElementsByTagName('td')[0].innerText;
+        const zutat = zutatenTabelle[i].getElementsByTagName('td')[1].innerText;
+        zutaten.push(`${menge} ${zutat}`);
+    }
 
-        const tbody = table.querySelector('tbody');
-        const rows = tbody.querySelectorAll('tr');
-        const recipeIngredients = [];
+    einkaufsliste.push({ titel: rezeptTitel, zutaten: zutaten });
+    localStorage.setItem('einkaufsliste', JSON.stringify(einkaufsliste));
+}
 
-        rows.forEach(row => {
-            const cells = row.querySelectorAll('td');
-            const menge = cells[0].textContent.trim();
-            const zutat = cells[1].textContent.trim();
+function loadShoppingList() {
+    const einkaufslisteDiv = document.getElementById('einkaufsliste');
+    let einkaufsliste = JSON.parse(localStorage.getItem('einkaufsliste')) || [];
 
-            if (menge && zutat) {
-                recipeIngredients.push({ menge, zutat });
-            } else if (zutat) {
-                recipeIngredients.push({ zutat });
-            }
+    einkaufsliste.forEach(item => {
+        const titel = document.createElement('h2');
+        titel.innerText = item.titel;
+        einkaufslisteDiv.appendChild(titel);
+
+        const zutatenListe = document.createElement('ul');
+        item.zutaten.forEach(zutat => {
+            const li = document.createElement('li');
+            li.innerText = zutat;
+            zutatenListe.appendChild(li);
         });
-
-        const ingredientTable = document.createElement('table');
-        const newTbody = document.createElement('tbody');
-
-        recipeIngredients.forEach(ingredient => {
-            const tr = document.createElement('tr');
-            const td1 = document.createElement('td');
-            const td2 = document.createElement('td');
-
-            if (ingredient.menge) {
-                td1.textContent = ingredient.menge;
-            }
-            td2.textContent = ingredient.zutat;
-
-            tr.appendChild(td1);
-            tr.appendChild(td2);
-            newTbody.appendChild(tr);
-        });
-
-        ingredientTable.appendChild(newTbody);
-        ingredientsList.appendChild(ingredientTable);
+        einkaufslisteDiv.appendChild(zutatenListe);
     });
 }
 
-window.onload = function() {
-    loadRecipeIngredients();
-};
+function clearShoppingList() {
+    localStorage.removeItem('einkaufsliste');
+    document.getElementById('einkaufsliste').innerHTML = '';
+}
 
-function exportToShoppingNote() {
-    const tables = document.querySelectorAll('table');
-    const shoppingList = [];
-
-    tables.forEach(table => {
-        const tbody = table.querySelector('tbody');
-        const rows = tbody.querySelectorAll('tr');
-
-        rows.forEach(row => {
-            const cells = row.querySelectorAll('td');
-            const menge = cells[0].textContent.trim();
-            const zutat = cells[1].textContent.trim();
-
-            if (zutat) {
-                shoppingList.push({ zutat, menge });
-            }
-        });
-    });
-
-    localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
-    window.location.href = '/html/ShoppingNote.html';
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadShoppingList);
+} else {
+    loadShoppingList();
 }

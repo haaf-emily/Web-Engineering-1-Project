@@ -3,22 +3,24 @@
 
 <head>
     <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/BruschettaBurrata.png" alt="Käsecreme auf einer Scheibe Brot angerichtet."
             style="width:100%">
-        <h1>Burrata-Bruschetta mit Tomaten</h1>
+        <h1 id="rezept-titel">Burrata-Bruschetta mit Tomaten</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>1</td>
                 <td>Ciabatta</td>
@@ -49,6 +51,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />
@@ -75,4 +79,5 @@
         </ol>
     </div>
 </body>
+
 </html>

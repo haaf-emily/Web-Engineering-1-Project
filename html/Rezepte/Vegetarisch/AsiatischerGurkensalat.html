@@ -3,22 +3,24 @@
 
 <head>
     <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/asiatischer-gurkensalat.png" alt="Käsecreme auf einer Scheibe Brot angerichtet."
             style="width:100%">
-        <h1>Asiatischer Gurkensalat mit Sesamöl</h1>
+        <h1 id="rezept-titel">Asiatischer Gurkensalat mit Sesamöl</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>8</td>
                 <td>Minigurken</td>
@@ -53,9 +55,11 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
     <div>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <h2>
             Zubereitung
         </h2>

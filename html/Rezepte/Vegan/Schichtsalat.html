@@ -7,18 +7,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
-        <img src="/Picture/Recepts/VeganerSchichtsalat.png" alt="Schichtsalat in einer Glasschüssel angerichtet" style="width:100%">
-        <h1>Schichtsalat</h1>
+        <img src="/Picture/Recepts/VeganerSchichtsalat.png" alt="Schichtsalat in einer Glasschüssel angerichtet"
+            style="width:100%">
+        <h1 id="rezept-titel">Schichtsalat</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>1</td>
                 <td>Romana Salat</td>
@@ -44,8 +46,8 @@
                 <td>Ananas</td>
             </tr>
             <tr>
-            <td>190 g</td>
-            <td>Karottensalat</td>
+                <td>190 g</td>
+                <td>Karottensalat</td>
             </tr>
             <tr>
                 <td>330 g</td>
@@ -101,6 +103,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

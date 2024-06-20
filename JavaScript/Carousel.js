@@ -35,9 +35,17 @@ function showSlides(containerIndex, slideIndex) {
 
     slideIndexes[containerIndex] = (slideIndex + slides.length) % slides.length;
 
+    let shownIndexes = []; // Add this line
+
     for (let j = 0; j < slidesToShow; j++) {
         let index = (slideIndexes[containerIndex] + j) % slides.length;
+        if (shownIndexes.includes(index)) { // Add this line
+            j--; // Try the next slide
+            slideIndexes[containerIndex] = (slideIndexes[containerIndex] + 1) % slides.length; // Move the index forward
+            continue; // Skip this iteration
+        }
         slides[index].style.display = "block";
+        shownIndexes.push(index); // Add this line
     }
 }
 

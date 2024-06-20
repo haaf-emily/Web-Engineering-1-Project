@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Einkaufsliste</title>
-    <link rel="stylesheet" href="ShoppingNote.css">
+    <link rel="stylesheet" href="/Css/Recept.css">
     <link rel="stylesheet" href="/Css/Font.css">
-    <script defer src="/html/ShoppingNote.html"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkaufsliste</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
+
 <body>
     <h1>Einkaufsliste</h1>
-    <table id="einkaufsliste">
-        <thead>
-            <tr>
-                <th>Zutat</th>
-                <th>Menge</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Der Inhalt wird hier per JavaScript eingefügt -->
-        </tbody>
-    </table>
+    <div id="einkaufsliste"></div>
+    <button onclick="clearShoppingList()">Einkaufsliste löschen</button>
+    
 </body>
 </html>

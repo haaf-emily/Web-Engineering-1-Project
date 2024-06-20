@@ -3,22 +3,24 @@
 
 <head>
     <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/potatoes.png"
             alt="Knusprig Kartoffelscheiben Ganiert mit Crème Fresh und Kräuter" style="width:100%">
-        <h1>Superknusprige Kartoffelscheiben</h1>
+        <h1 id="rezept-titel">Superknusprige Kartoffelscheiben</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>1 kg</td>
                 <td>festkochende Kartoffeln</td>
@@ -69,6 +71,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

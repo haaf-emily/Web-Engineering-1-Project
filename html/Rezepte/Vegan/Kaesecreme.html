@@ -3,22 +3,24 @@
 
 <head>
     <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
 </head>
 
 <body>
     <div>
         <img src="/Picture/Recepts/VeganeKäsecreme.png"
             alt="Eine Scheibe Brot mit Käsecreme auf einem Teller angerichtet." style="width:100%">
-        <h1>Vegane Käsecreme</h1>
+        <h1 id="rezept-titel">Vegane Käsecreme</h1>
     </div>
     <div>
         <h2>
             Zutaten
         </h2>
-        <table>
+        <table id="zutaten-tabelle">
             <tr>
                 <td>250 ml</td>
                 <td>Sojamilch</td>
@@ -69,6 +71,8 @@
             </tr>
         </table>
     </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />

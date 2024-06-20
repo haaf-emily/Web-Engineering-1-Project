@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Hintergrundfarbe der Seite */
+}
+
+header {
+    background-color: #333; /* Hintergrundfarbe des Headers */
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    border: 1px solid #000; /* Umrandung um die gesamte Navigation */
+    background-color: #fff; /* Weißer Hintergrund für die Navigation */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Zentriert die Navigationselemente vertikal */
+}
+
+nav ul li {
+    position: relative; /* Ermöglicht das Dropdown-Menü */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Textfarbe der Navigationselemente */
+    display: block;
+    padding: 10px 20px; /* Innenabstand für die Navigationselemente */
+}
+
+.submenu-content {
+    display: none;
+    background-color: #fff; /* Weißer Hintergrund für das Dropdown-Menü */
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Positioniert das Dropdown-Menü rechts vom Eltern-Element */
+    width: 200px; /* Festgelegte Breite für das Dropdown-Menü */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für bessere Sichtbarkeit */
+    z-index: 1000; /* Sicherstellen, dass das Dropdown über anderen Elementen liegt */
+}
+
+.submenu-content li {
+    margin: 5px 0;
+    text-align: left; /* Text linksbündig im Dropdown-Menü */
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.content {
+    padding: 20px;
+    box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start; /* Links ausgerichtet im mobilen Menü */
+        height: auto; /* Automatische Höhe */
+    }
+
+    .submenu-content {
+        position: relative;
+        left: 0;
+        width: auto; /* Dropdown-Menü passt sich dem Inhalt an */
+        box-shadow: none; /* Keine Schatten für das mobile Dropdown-Menü */
+    }
+}
