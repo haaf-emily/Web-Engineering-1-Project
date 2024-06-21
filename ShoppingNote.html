@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="Recept.css">
     <link rel="stylesheet" href="Font.css">
@@ -7,12 +8,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Einkaufsliste</title>
     <script defer src="Recepts.js"></script>
+    <link rel="stylesheet" href="NavigationHandy.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
+    <header class="header">
+        <a href="Homepage.html" class="logo">Your Dream Recepts</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="RecipeOverview.html">Rezepte</a></li>
+            <li><a href="Weekplan.html">Wochenplan</a></li>
+            <li><a href="ShoppingNote.html">Einkaufszettel</a></li>
+            <li><a href="ContactUs.html">Kontakt</a></li>
+        </ul>
+    </header>
+    <br />
+    <br />
     <h1>Einkaufsliste</h1>
     <div id="einkaufsliste"></div>
     <button onclick="clearShoppingList()">Einkaufsliste löschen</button>
-    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Infos</h4>
+                    <ul>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="ContactUs.html">Kontakt</a></li>
+                        <li><a href="Impressum.html">Impressum</a></li>
+                        <li><a href="Sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Rezepte</h4>
+                    <ul>
+                        <li><a href="Meat.html">Fleischgerichte</a></li>
+                        <li><a href="Vegetarisch.html">Vegetarische Gerichte</a></li>
+                        <li><a href="Vegan.html">Vegane Gerichte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Interessant</h4>
+                    <ul>
+                        <li><a href="ShoppingNote.html">Einkaufsliste</a></li>
+                        <li><a href="Weekplan.html">Wochenplan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 YourDreamsRecepts. All rights reserved. | <a href="PrivacyPolicy.html">Datenschutz</a></p>
+        </div>
+    </footer>
 </body>
+
 </html>
