@@ -1,0 +1,191 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    /* Fügt eine allgemeine Schriftart hinzu */
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #444;
+    /* Dunklere Schriftfarbe für Überschriften */
+}
+
+.slideshow-container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    /* Vereinfacht das Padding */
+}
+
+.slides-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease;
+}
+
+.mySlides {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex: 1 1 calc(100% - 1%);
+    /* Reduziert den Abstand zwischen den Karten */
+    margin-right: 0.5%;
+    /* Reduziert den Abstand zwischen den Karten */
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* Fügt den Karten abgerundete Ecken hinzu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Fügt den Karten einen leichten Schatten hinzu */
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fügt einen Hintergrund hinzu, um den Text lesbarer zu machen */
+}
+
+.numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+button.prev,
+button.next {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black background */
+    color: #ffffff;
+    /* White color for high contrast */
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 10px 20px;
+    /* Add some padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker when hovered */
+}
+
+@media (min-width: 1201px) {
+    .mySlides {
+        flex: 1 0 25%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+    .mySlides {
+        flex: 1 1 33.33%;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    .mySlides {
+        flex: 2 0 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .mySlides {
+        flex: 1 0 100%;
+    }
+
+    button.prev,
+    button.next {
+
+        display: none;
+    }
+
+}

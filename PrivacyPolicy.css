@@ -1,0 +1,12 @@
+body{
+    line-height: 1.6;
+    width: 92%;
+    padding: 3%;
+    color: #333;
+    background-color: #f9f9f9;
+}
+h4{
+    text-align: left;
+    font-style:italic;
+    font-weight: bold;
+}

@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezepte Web-Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="NavigationHandy.css">
+    <link rel="stylesheet" href="Css/Font.css">
+    <script src="Navigationhandy.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li class="submenu">
-                    <a href="#">Rezepte</a>
-                    <ul class="submenu-content">
-                        <li><a href="#">Fleisch Gerichte</a></li>
-                        <li><a href="#">Vegetarische Gerichte</a></li>
-                        <li><a href="#">Vegane Gerichte</a></li>
-                        <li><a href="#">Schnelle Gerichte</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Wochenplan</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <a href="" class="logo">Your Dream Recepts</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="/html/AboutUs.html">About Us</a></li>
+            <li><a href="/html/RecipeOverview.html">Rezepte</a></li>
+            <li><a href="/html/Weekplan.html">Wochenplan</a></li>
+            <li><a href="/html/ShoppingNote.html">Einkaufszettel</a></li>
+            <li><a href="/html/ContactUs.html">Kontakt</a></li>
+        </ul>
     </header>
-    <div class="content">
-        <!-- Hauptinhalt der Seite -->
-    </div>
-    <script src="scripts.js"></script>
 </body>
+
 </html>

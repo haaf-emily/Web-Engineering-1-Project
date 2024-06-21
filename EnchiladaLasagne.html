@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
+    <link rel="stylesheet" href="/NavigationHandy.css">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
+    <script src="Navigationhandy.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">Your Recepts</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="/html/AboutUs.html">About Us</a></li>
+            <li><a href="/html/RecipeOverview.html">Rezepte</a></li>
+            <li><a href="/html/Weekplan.html">Wochenplan</a></li>
+            <li><a href="/html/ShoppingNote.html">Einkaufszettel</a></li>
+            <li><a href="/html/ContactUs.html">Kontakt</a></li>
+        </ul>
+    </header>
+    <br/>
+    <div>
+        <img src="/Picture/Recepts/mexikanische-enchilada-lasagne.png"
+            alt="Mexikanische Enchilada-Lasagne mit Basilikum verfeinert" style="width:100%">
+        <h1 id="rezept-titel">Mexikanische Enchilada-Lasagne</h1>
+    </div>
+    <div>
+        <h2>
+            Zutaten
+        </h2>
+        <table id="zutaten-tabelle">
+            <tr>
+                <td>350 g</td>
+                <td>Gemischtes Hackfleisch</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>rote Zwiebeln</td>
+            </tr>
+            <tr>
+                <td>2 Zehe</td>
+                <td>Knoblauch</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td> Paprikaschote</td>
+            </tr>
+            <tr>
+                <td>400 g</td>
+                <td>Kidneybohnen</td>
+            </tr>
+            <tr>
+                <td>300 g</td>
+                <td>Mais</td>
+            </tr>
+            <tr>
+                <td>400g</td>
+                <td>stückige Tomaten</td>
+            </tr>
+            <tr>
+                <td>300 g</td>
+                <td>Naturjoghurt</td>
+            </tr>
+            <tr>
+                <td>150 g</td>
+                <td>Frischkäse mit Paprika</td>
+            </tr>
+            <tr>
+                <td>1 Pck.</td>
+                <td>Tortilla-Wraps</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Öl zum Anbraten</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Fett für die Form</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Paprikapulver, edelsüßes </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Paprikapulver, rosenscharfes </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Salz und Pfeffer</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tabasco</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Chilipulver</td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
+    <div>
+        <br />
+        <br />
+        <h2>
+            Zubereitung
+        </h2>
+        <ol>
+            <li>
+                Die rote Zwiebel schälen und fein würfeln.
+                Die Knoblauchzehen schälen und fein hacken.
+                Die Paprikaschote waschen, entkernen und in kleine Würfel schneiden.
+                Die Kidneybohnen und den Mais abgießen und abspülen.
+            </li>
+            <li>
+                Öl in einer großen Pfanne erhitzen.
+                Die gewürfelte Zwiebel und den gehackten Knoblauch in die Pfanne geben und anbraten, bis sie weich sind.
+                Das Hackfleisch hinzufügen und braten, bis es braun und krümelig ist.
+            </li>
+            <li>
+                Die gewürfelte Paprikaschote in die Pfanne geben und mit anbraten, bis sie weich ist.
+            </li>
+            <li>
+                Die abgetropften Kidneybohnen und den Mais in die Pfanne geben und gut vermischen.
+            </li>
+            <li>
+                Die stückigen Tomaten aus der Dose hinzufügen.
+                Mit edelsüßem und rosenscharfem Paprikapulver, Salz, Pfeffer, Tabasco und Chilipulver nach Geschmack
+                würzen.
+                Alles gut umrühren und einige Minuten köcheln lassen, damit sich die Aromen verbinden.
+            </li>
+            <li>
+                In einer Schüssel den Naturjoghurt und den Frischkäse mit Paprika glatt rühren.
+            </li>
+            <li>
+                en Backofen auf 180°C (Ober-/Unterhitze) vorheizen.
+                Eine Auflaufform (ca. 20x30 cm) leicht fetten.
+            </li>
+            <li>
+                Eine Schicht Tortilla-Wraps auf den Boden der gefetteten Auflaufform legen. Die Wraps können in Stücke
+                geschnitten werden, damit sie den Boden der Form gleichmäßig bedecken.
+            </li>
+            <li>
+                Eine Schicht der Hackfleisch-Gemüse-Mischung auf die Tortillas geben und gleichmäßig verteilen.
+                Ein Drittel der Joghurt-Frischkäse-Mischung darüber verteilen.
+            </li>
+            <li>
+                Eine weitere Schicht Tortilla-Wraps darüberlegen.
+                Wieder eine Schicht Hackfleisch-Gemüse-Mischung und ein weiteres Drittel der Joghurt-Frischkäse-Mischung
+                darauf verteilen.
+                Diesen Vorgang wiederholen, bis alle Zutaten aufgebraucht sind. Mit einer Schicht Tortilla-Wraps
+                abschließen.
+            </li>
+            <li>
+                Den geriebenen Käse gleichmäßig über die oberste Schicht der Lasagne streuen.
+            </li>
+            <li>
+                Die Auflaufform in den vorgeheizten Ofen stellen und die Lasagne etwa 25-30 Minuten backen, bis der Käse
+                goldbraun und die Füllung heiß und blubbernd ist.
+            </li>
+            <li>
+                Die fertige Enchilada-Lasagne aus dem Ofen nehmen und kurz abkühlen lassen.
+                In Stücke schneiden und heiß servieren.
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>

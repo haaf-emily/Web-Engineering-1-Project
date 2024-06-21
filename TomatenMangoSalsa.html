@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
+    <script src="Navigationhandy.js"></script>
+    <link rel="stylesheet" href="/NavigationHandy.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">Your Recepts</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="/html/AboutUs.html">About Us</a></li>
+            <li><a href="/html/RecipeOverview.html">Rezepte</a></li>
+            <li><a href="/html/Weekplan.html">Wochenplan</a></li>
+            <li><a href="/html/ShoppingNote.html">Einkaufszettel</a></li>
+            <li><a href="/html/ContactUs.html">Kontakt</a></li>
+        </ul>
+    </header>
+    <br />
+    <div>
+        <img src="/Picture/Recepts/tomatensalsa.png"
+            alt="Verschiedene Salsa arten angerichtet in Schüsseln umgeben von Tortilla Chips." style="width:100%">
+        <h1 id="rezept-titel">Tomaten- und Mango-Salsa mit Tortilla Chips</h1>
+    </div>
+    <div>
+        <h2>
+            Zutaten
+        </h2>
+        <table id="zutaten-tabelle">
+            <tr>
+                <td>400 g</td>
+                <td>Roma Tomaten</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Habanero Chili</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Zwiebel</td>
+            </tr>
+            <tr>
+                <td>20 g</td>
+                <td>Koriander</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Knoblauchzehen</td>
+            </tr>
+            <tr>
+                <td>1/2</td>
+                <td>Limette</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>kleine Mango</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Avocado</td>
+            </tr>
+            <tr>
+                <td>1/2</td>
+                <td>Gurke</td>
+            </tr>
+            <tr>
+                <td>10 g</td>
+                <td>Koriander</td>
+            </tr>
+            <tr>
+                <td>1/2</td>
+                <td>Limette</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Salz</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pfeffer</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pflanzenöl zum Braten</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tortillas zum Servieren</td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
+    <div>
+        <br />
+        <br />
+        <h2>
+            Zubereitung
+        </h2>
+        <ol>
+            <li>
+                Habanero halbieren und die Kerne mitsamt den „Trennwänden“, an denen sie hängen, herausschneiden. Dabei
+                könnt ihr je nach eurem Sicherheitsgefühl auch Küchenhandschuhe tragen (sollten euch aber in jedem Fall
+                nicht danach in die Augen greifen). Zwiebel schälen und halbieren und Knoblauch schälen.
+            </li>
+            <li>
+                Etwas Pflanzenöl in einer Pfanne erhitzen und die großen Stücken Habanero, Zwiebel, Knoblauchzehe und
+                Tomaten im Ganzen über mittlerer Hitze ca. 5 Minuten anbraten, damit sie schon einige dunklere Stellen
+                bekommen. Anschließend abkühlen lassen.
+            </li>
+            <li>
+                Den gesamten Inhalt der Pfanne in einen Zerkleinerer werfen. Koriander und Limettensaft dazugeben und
+                nun alles mit der Pulsfunktion so lang mixen, bis ihr eine fein-stückige, saftige Salsa, aber keinen
+                komplett flüssigen Saft habt. Mit Salz und Pfeffer abschmecken und mit Tortillas servieren.
+            </li>
+            <li>
+                Mango, Avocado und rote Zwiebel schälen und in feine Würfel schneiden. Gurke halbieren, die flüssigen
+                Kerne auslöffeln und den Rest ebenfalls fein würfeln. Koriander fein hacken.
+            </li>
+            <li>
+                Alles gemeinsam in eine Schüssel geben und mit Limettensaft, Salz und Pfeffer abschmecken. Wer mag, kann
+                noch mehr Limettensaft dazugeben. Gut verrühren und entweder direkt servieren oder im Kühlschrank in
+                einem geschlossenen Behälter 2-3 Tage lagern.
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>

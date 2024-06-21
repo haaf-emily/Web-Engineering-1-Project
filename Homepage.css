@@ -1,0 +1,147 @@
+body {
+    line-height: 1.6;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.center{
+    text-align: center;
+}
+
+button {
+    background-color: #009879; /* Hintergrundfarbe des Buttons */
+    color: #fff; /* Textfarbe des Buttons */
+    border: none; /* Entfernt den Rahmen des Buttons */
+    padding: 0.5em 1em; /* Innenabstand des Buttons */
+    margin: 1em 1em 1em 0em;
+    border-radius: 9px; /* Abgerundete Ecken des Buttons */
+    cursor: pointer; /* Zeigt an, dass der Button anklickbar ist */
+    transition: background-color 0.3s; /* Übergangseffekt für Hintergrundfarbe */
+    font-size: 1.2em;
+}
+
+/* Hover-Effekt für den Button */
+button:hover {
+    background-color: #007b66; /* Ändert die Hintergrundfarbe bei Hover */
+}
+
+a {
+    color: #333; /* Standardfarbe des Links */
+    text-decoration: none; /* Entfernt die Unterstreichung des Links */
+    transition: color 0.3s; /* Übergangseffekt für die Farbänderung */
+}
+
+/* Hover-Effekt */
+a:hover {
+    color: #009879; /* Farbe ändern, wenn der Benutzer über den Link fährt */
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none; /* Entfernt die Standardlinie */
+    height: 0.3ch; /* Höhe der Linie */
+    background-color:#007b66; /* Farbe der Linie */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Schatten auf die Linie */
+    margin-bottom: 5%;
+}
+
+.main {
+    padding: 20px;
+}
+
+.welcome h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.welcome div {
+    font-size: 1.2em;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-us, .highlights {
+    margin-bottom: 20px;
+}
+
+.about-us h2, .highlights h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.about-us div, .highlights div {
+    font-size: 1.2em;
+}
+
+.about-us button, .highlights button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #009879;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.border {
+    background-color: #007b66;
+}
+
+.color {
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/* Für Tablets im Querformat */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/* Für Tablets im Hochformat und kleine Desktops */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    body {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .image-container img {
+        width: 85%;
+        height: auto;
+    }
+}
+
+/* Für größere Desktops */
+@media only screen and (min-width: 1201px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .image-container img {
+        width: 70%;
+        height: auto;
+    }
+}

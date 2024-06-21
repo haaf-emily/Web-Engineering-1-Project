@@ -1,0 +1,66 @@
+h4 {
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color:black
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 7px;
+  width: calc(33% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 10px; /* Fester Abstand um jede Karte */
+}
+
+img {
+  width: 100%;
+  height: 200px; /* Feste Höhe für alle Bilder */
+  object-fit: cover; /* Bild skalieren und zuschneiden, um den Container zu füllen */
+  border-radius: 7px 7px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+  box-sizing: border-box;
+  height: calc(100% - 200px); /* Höhe der Karte minus Höhe des Bildes */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  color:#007b66 ;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: calc(100% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .card {
+    width: calc(50% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .card {
+    width: calc(33% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .card {
+    width: calc(25% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
+  }
+}
+

@@ -1,77 +1,134 @@
-body {
+
+  
+  a {
+    color: #000;
+  }
+  
+  .header {
+    background-color: hsl(170, 100%, 24%);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Hintergrundfarbe der Seite */
-}
-
-header {
-    background-color: #333; /* Hintergrundfarbe des Headers */
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav {
-    border: 1px solid #000; /* Umrandung um die gesamte Navigation */
-    background-color: #fff; /* Weißer Hintergrund für die Navigation */
-}
-
-nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center; /* Zentriert die Navigationselemente vertikal */
-}
-
-nav ul li {
-    position: relative; /* Ermöglicht das Dropdown-Menü */
-}
-
-nav ul li a {
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #ffffff;
     text-decoration: none;
-    color: #000; /* Textfarbe der Navigationselemente */
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #ffffff;
+  }
+  
+  .header .logo {
     display: block;
-    padding: 10px 20px; /* Innenabstand für die Navigationselemente */
-}
-
-.submenu-content {
-    display: none;
-    background-color: #fff; /* Weißer Hintergrund für das Dropdown-Menü */
-    padding: 10px;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+      }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    content: '';
+    display: block;
+    height: 100%;
     position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
-    left: 100%; /* Positioniert das Dropdown-Menü rechts vom Eltern-Element */
-    width: 200px; /* Festgelegte Breite für das Dropdown-Menü */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für bessere Sichtbarkeit */
-    z-index: 1000; /* Sicherstellen, dass das Dropdown über anderen Elementen liegt */
-}
-
-.submenu-content li {
-    margin: 5px 0;
-    text-align: left; /* Text linksbündig im Dropdown-Menü */
-}
-
-.submenu:hover .submenu-content {
-    display: block;
-}
-
-.content {
-    padding: 20px;
-    box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start; /* Links ausgerichtet im mobilen Menü */
-        height: auto; /* Automatische Höhe */
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
     }
-
-    .submenu-content {
-        position: relative;
-        left: 0;
-        width: auto; /* Dropdown-Menü passt sich dem Inhalt an */
-        box-shadow: none; /* Keine Schatten für das mobile Dropdown-Menü */
+    .header li a {
+      padding: 20px 30px;
     }
-}
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  

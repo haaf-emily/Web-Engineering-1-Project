@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/Css/Recept.css">
+    <link rel="stylesheet" href="/Css/Font.css">
+    <link rel="stylesheet" href="/NavigationHandy.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept</title>
+    <script defer src="/JavaScript/Recepts.js"></script>
+    <script src="Navigationhandy.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">Your Recepts</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="/html/AboutUs.html">About Us</a></li>
+            <li><a href="/html/RecipeOverview.html">Rezepte</a></li>
+            <li><a href="/html/Weekplan.html">Wochenplan</a></li>
+            <li><a href="/html/ShoppingNote.html">Einkaufszettel</a></li>
+            <li><a href="/html/ContactUs.html">Kontakt</a></li>
+        </ul>
+    </header>
+    <br />
+    <div>
+        <img src="/Picture/Recepts/gnocchi-spinat-auflauf-mit-haehnchen-und-curry.png"
+            alt="Gnocchi-Spinat-Auflauf in Backform stehen auf einem Tisch" style="width:100%">
+        <h1 id="rezept-titel">Gnocchi-Spinat-Auflauf mit Hähnchen und Curry</h1>
+    </div>
+    <div>
+        <h2>
+            Zutaten
+        </h2>
+        <table id="zutaten-tabelle">
+            <tr>
+                <td>500 g</td>
+                <td>frische Gnocchi </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Zwiebeln</td>
+            </tr>
+            <tr>
+                <td>300 g</td>
+                <td>Hähnchenfleisch</td>
+            </tr>
+            <tr>
+                <td>200 g</td>
+                <td>Blattspinat</td>
+            </tr>
+            <tr>
+                <td>200 g</td>
+                <td>Sahne</td>
+            </tr>
+            <tr>
+                <td>200 ml</td>
+                <td>Gemüsebrühe</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mozzarella</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Salz und Pfeffer</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>rotes Thai Currypulver</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function addToShoppingList() {
+            alert("Die Zutaten wurden erfolgreich zur Einkaufsliste hinzugefügt!");
+        }
+    </script>
+    <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
+    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
+    <div>
+        <br />
+        <br />
+        <h2>
+            Zubereitung
+        </h2>
+        <ol>
+            <li>
+                Zwiebel schälen und fein würfeln.
+                Hähnchen- oder Putenfleisch in kleine Stücke schneiden.
+                Blattspinat auftauen lassen und gut abtropfen.
+            </li>
+            <li>
+                Den Backofen auf 180°C (Ober-/Unterhitze) vorheizen.
+            </li>
+            <li>
+                Eine Pfanne mit etwas Öl erhitzen.
+                Das Fleisch darin scharf anbraten, bis es goldbraun ist. Mit Salz und Pfeffer würzen.
+                Fleisch aus der Pfanne nehmen und beiseite stellen.
+            </li>
+            <li>
+                In derselben Pfanne die Zwiebelwürfel anbraten, bis sie glasig sind.
+                Den aufgetauten und abgetropften Blattspinat hinzufügen und kurz mitbraten.
+            </li>
+            <li>
+                Die Sahne und die Gemüsebrühe in die Pfanne zu den Zwiebeln und dem Spinat gießen.
+                Mit Salz, Pfeffer und einer Prise rotem Thai-Currypulver abschmecken.
+                Kurz aufkochen lassen und dann vom Herd nehmen.
+            </li>
+            <li>
+                Die Gnocchi und die gebratenen Fleischstücke in eine Auflaufform geben.
+                Die vorbereitete Sauce darüber gießen und alles gut vermengen.
+            </li>
+            <li>
+                Die Mozzarellakugel in dünne Scheiben schneiden oder grob zerzupfen.
+                Den Mozzarella gleichmäßig über den Auflauf verteilen.
+            <li>
+                Die Auflaufform in den vorgeheizten Ofen stellen und für etwa 20-25 Minuten backen, bis der Mozzarella
+                goldbraun und geschmolzen ist.
+            </li>
+            <li>
+                Den Auflauf aus dem Ofen nehmen und kurz abkühlen lassen.
+                Heiß servieren und genießen.
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
