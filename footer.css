@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  line-height: 1.5;
+  background-color: #ffffff; /* Weiß als Hauptfarbe */
+  color: #000000; /* Schwarzer Text für gute Lesbarkeit */
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  background-color: #ffffff; /* Weiß als Hauptfarbe */
+  padding: 70px 0;
+  border-top: 1px solid #e0e0e0; /* Dünne graue Linie oben */
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #006400; /* Dunkelgrüner Text */
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #006400; /* Dunkelgrün für Akzent */
+  height: 2px;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #006400; /* Dunkelgrüner Text */
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #00ff00; /* Helles Grün beim Hover */
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 100, 0, 0.1); /* Helles Dunkelgrün mit 10% Opazität */
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #006400; /* Dunkelgrüner Text */
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #ffffff; /* Weißer Text beim Hover */
+  background-color: #006400; /* Dunkelgrüner Hintergrund beim Hover */
+  transform: scale(1.1); /* Leichte Vergrößerung beim Hover */
+}
+
+.footer-bottom {
+  background-color: #f9f9f9; /* Heller Hintergrund für unteren Bereich */
+  padding: 20px 0;
+  text-align: center;
+  color: #000000; /* Schwarzer Text */
+  border-top: 1px solid #e0e0e0; /* Dünne graue Linie oben */
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #006400; /* Dunkelgrüne Links */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-bottom a:hover {
+  color: #00ff00; /* Helles Grün beim Hover */
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}

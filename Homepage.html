@@ -2,17 +2,44 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/Css/Cards.css">
-    <link rel="stylesheet" href="/Css/Font.css">
-    <link rel="stylesheet" href="/Css/Homepage.css">
+    <link rel="stylesheet" href="Cards.css">
+    <link rel="stylesheet" href="Font.css">
+    <link rel="stylesheet" href="Homepage.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script src="Navigationhandy.js"></script>
+    <link rel="stylesheet" href="NavigationHandy.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
+    <header class="header">
+        <a href="" class="logo">Your Dream Recepts</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="RecipeOverview.html">Rezepte</a></li>
+            <li><a href="Weekplan.html">Wochenplan</a></li>
+            <li><a href="ShoppingNote.html">Einkaufszettel</a></li>
+            <li><a href="ContactUs.html">Kontakt</a></li>
+        </ul>
+    </header>
+    <br />
     <main>
         <div class="welcome">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <h1>Herzlich Willkommen</h1>
             <p>
                 Hier dreht sich alles um den Genuss des Kochens und die Freude am Essen. Entdecken Sie eine Vielzahl von
@@ -23,10 +50,10 @@
                 und finden Sie Ihr nächstes Lieblingsgericht!
             </p>
             <p>Viel Spaß beim Stöbern und Kochen!</p>
-            <button class="btn">Rezepte</button>
+            <button class="btn"> <a href="RecipeOverview.html">Rezepte </a></button>
         </div>
         <div class="image-container">
-            <img src="/Picture/business-team-working-together.png" alt="Ratatouille angerichtet in einem Topf">
+            <img src="Picture/business-team-working-together.png" alt="Ratatouille angerichtet in einem Topf">
         </div>
         <div class="about-us">
             <h2>Über uns</h2>
@@ -36,7 +63,7 @@
                 Sophie sorgt für gesunde und nachhaltige Köstlichkeiten. Zusammen teilen wir unsere Leidenschaft für das
                 Kochen und präsentieren Ihnen eine vielfältige Auswahl an inspirierenden Rezepten!
             </p>
-            <button class="btn">Mehr ...</button>
+            <button class="btn"><a href="AboutUs.html">Mehr ...</a></button>
         </div>
         <div class="highlights">
             <h2>Highlights</h2>
@@ -47,58 +74,100 @@
         </div>
         <div class="center">
             <div class="card">
-                <img src="/Picture/Recepts/haehnchencurry-indisch-in-kokosnussmilch.png"
+                <img src="Picture/Recepts/haehnchencurry-indisch-in-kokosnussmilch.png"
                     alt="Indisches Hähnchencurry auf Reis" style="width:100%">
                 <div class="card-content">
-                    <a href="/html/Rezepte/IndischesHänchencurry.html">
+                    <a href="IndischesHänchencurry.html">
                         <h4><b>Indisches Hähnchencurry</b></h4>
                     </a>
                 </div>
             </div>
             <div class="card">
-                <img src="/Picture/Recepts/vegetarische-tortellini-pfanne.png" alt="Tortellini Pfanne angerichtet"
+                <img src="Picture/Recepts/vegetarische-tortellini-pfanne.png" alt="Tortellini Pfanne angerichtet"
                     style="width:100%">
                 <div class="card-content">
-                    <a href="/html/Rezepte/TortelliniPfanne.html">
+                    <a href="TortelliniPfanne.html">
                         <h4><b>Tortellini Pfanne</b></h4>
                     </a>
                 </div>
             </div>
             <div class="card">
-                <img src="/Picture/Recepts/ratatouille.png" alt="Ratatouille angerichtet in einem Topf"
+                <img src="Picture/Recepts/ratatouille.png" alt="Ratatouille angerichtet in einem Topf"
                     style="width:100%">
                 <div class="card-content">
-                    <a href="/html/Rezepte/Ratatouille.html">
+                    <a href="Ratatouille.html">
                         <h4><b>Ratatouille</b></h4>
                     </a>
                 </div>
             </div>
         </div>
         <section class="center">
-        <hr/>
+            <hr />
             <div class="card">
                 <div class="card-content color">
-                    <a href="/html/Rezepte/Ratatouille.html">
+                    <a href="ShoppingNote.html">
                         <h4><b>EINKAUFSLISTE</b></h4>
                     </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-content color">
-                    <a href="/html/Rezepte/Ratatouille.html">
+                    <a href="RecipeOverview.html">
                         <h4><b>REZEPTE</b></h4>
                     </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-content color">
-                    <a href="/html/Rezepte/Ratatouille.html">
+                    <a href="Weekplan.html">
                         <h4><b>WOCHENPLAN</b></h4>
                     </a>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Infos</h4>
+                    <ul>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="ContactUs.html">Kontakt</a></li>
+                        <li><a href="Impressum.html">Impressum</a></li>
+                        <li><a href="Sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Rezepte</h4>
+                    <ul>
+                        <li><a href="Meat.html">Fleischgerichte</a></li>
+                        <li><a href="Vegetarisch.html">Vegetarische Gerichte</a></li>
+                        <li><a href="Vegan.html">Vegane Gerichte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Interessant</h4>
+                    <ul>
+                        <li><a href="ShoppingNote.html">Einkaufsliste</a></li>
+                        <li><a href="Weekplan.html">Wochenplan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 YourDreamsRecepts. All rights reserved. | <a href="PrivacyPolicy.html">Datenschutz</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

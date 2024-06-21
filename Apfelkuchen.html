@@ -7,27 +7,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
-    <script defer src="/JavaScript/Recepts.js"></script>
+    <script defer src="Recepts.js"></script>
     <script src="Navigationhandy.js"></script>
-    <link rel="stylesheet" href="/NavigationHandy.css">
+    <link rel="stylesheet" href="NavigationHandy.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="" class="logo">Your Recepts</a>
+        <a href="" class="logo">Your Dream Recepts</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-            <li><a href="/html/AboutUs.html">About Us</a></li>
-            <li><a href="/html/RecipeOverview.html">Rezepte</a></li>
-            <li><a href="/html/Weekplan.html">Wochenplan</a></li>
-            <li><a href="/html/ShoppingNote.html">Einkaufszettel</a></li>
-            <li><a href="/html/ContactUs.html">Kontakt</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="RecipeOverview.html">Rezepte</a></li>
+            <li><a href="Weekplan.html">Wochenplan</a></li>
+            <li><a href="ShoppingNote.html">Einkaufszettel</a></li>
+            <li><a href="ContactUs.html">Kontakt</a></li>
         </ul>
     </header>
     <br />
+    <br />
     <div>
-        <img src="/Picture/Recepts/veganer-apfelkuchen-mit-zimtstreuseln.png"
+        <img src="Picture/Recepts/veganer-apfelkuchen-mit-zimtstreuseln.png"
             alt="Stück Apfelkuchen mit einer Portion Sahne auf einem Teller angerichtet." style="width:100%">
         <h1 id="rezept-titel">Veganer Apfelkuchen</h1>
     </div>
@@ -79,7 +83,7 @@
         </table>
     </div>
     <button onclick="addToShoppingList()">Zur Einkaufsliste hinzufügen</button>
-    <button onclick="window.location.href='/html/ShoppingNote.html'">Einkaufsliste anzeigen</button>
+    <button onclick="window.location.href='ShoppingNote.html'">Einkaufsliste anzeigen</button>
     <div>
         <br />
         <br />
@@ -126,6 +130,48 @@
             </li>
         </ol>
     </div>
+    <footer class="footer">
+        <div class="container">
+         <div class="row">
+           <div class="footer-col">
+             <h4>Infos</h4>
+             <ul>
+               <li><a href="AboutUs.html">About us</a></li>
+               <li><a href="ContactUs.html">Kontakt</a></li>
+               <li><a href="Impressum.html">Impressum</a></li>
+               <li><a href="Sitemap.html">Sitemap</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Rezepte</h4>
+             <ul>
+               <li><a href="Meat.html">Fleischgerichte</a></li>
+               <li><a href="Vegetarisch.html">Vegetarische Gerichte</a></li>
+               <li><a href="Vegan.html">Vegane Gerichte</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Interessant</h4>
+             <ul>
+               <li><a href="ShoppingNote.html">Einkaufsliste</a></li>
+               <li><a href="Weekplan.html">Wochenplan</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Follow us</h4>
+             <div class="social-links">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 YourDreamsRecepts. All rights reserved. | <a href="PrivacyPolicy.html">Datenschutz</a></p>
+          </div>
+     </footer>
 </body>
 
 </html>
