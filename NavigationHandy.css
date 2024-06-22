@@ -114,7 +114,7 @@ a {
 }
 
 
-@media (min-width: 75em) {
+@media (min-width: 100%) {
   .header li {
     float: left;
   }
