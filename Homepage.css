@@ -14,31 +14,31 @@ section {
 }
 
 button {
-    background-color: #009879; /* Hintergrundfarbe des Buttons */
-    color: #fff; /* Textfarbe des Buttons */
-    border: none; /* Entfernt den Rahmen des Buttons */
-    padding: 0.5em 1em; /* Innenabstand des Buttons */
+    background-color: #009879; 
+    color: #fff; 
+    border: none; 
+    padding: 0.5em 1em;
     margin: 1em 1em 1em 0em;
-    border-radius: 9px; /* Abgerundete Ecken des Buttons */
-    cursor: pointer; /* Zeigt an, dass der Button anklickbar ist */
-    transition: background-color 0.3s; /* Übergangseffekt für Hintergrundfarbe */
+    border-radius: 9px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
     font-size: 1.2em;
 }
 
-/* Hover-Effekt für den Button */
+
 button:hover {
-    background-color: #007b66; /* Ändert die Hintergrundfarbe bei Hover */
+    background-color: #007b66; 
 }
 
 a {
-    color: #333; /* Standardfarbe des Links */
-    text-decoration: none; /* Entfernt die Unterstreichung des Links */
-    transition: color 0.3s; /* Übergangseffekt für die Farbänderung */
+    color: #333; 
+    text-decoration: none; 
+    transition: color 0.3s; 
 }
 
-/* Hover-Effekt */
+
 a:hover {
-    color: #009879; /* Farbe ändern, wenn der Benutzer über den Link fährt */
+    color: #009879; 
 }
 
 .welcome {
@@ -47,10 +47,10 @@ a:hover {
 }
 
 hr {
-    border: none; /* Entfernt die Standardlinie */
-    height: 0.3ch; /* Höhe der Linie */
-    background-color:#007b66; /* Farbe der Linie */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Schatten auf die Linie */
+    border: none; 
+    height: 0.3ch; 
+    background-color:#007b66; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
     margin-bottom: 5%;
 }
 

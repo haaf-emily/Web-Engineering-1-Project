@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
 }
 main {
-    margin-top: 5em; /* Passen Sie diesen Wert entsprechend der Höhe Ihres Headers an */
+    margin-top: 5em; 
 }
 .timeline {
     display: flex;

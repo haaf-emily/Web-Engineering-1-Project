@@ -1,81 +1,81 @@
-div{
+div {
 
-    line-height: 1.6; /* Verbessert die Lesbarkeit des Textes */
-}
-
-hr{
-    border-top: 0.7rch dotted;
-    border-bottom: none;
-    border-color:darkgreen; 
-}
-
-body {
-    margin: 0;
-    padding: 4%;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-h1 {
-    color: #16a085;
-    text-align: center; /* Zentriert den Titel */
-    margin-bottom: 20px; /* Fügt unten einen Abstand hinzu */
-}
-
-h3 {
-    color: #16a085;
-    margin-left: 20px;
+  line-height: 1.6;
 }
 
 hr {
-    border: none;
-    height: 2px;
-    background-color: #16a085;
-    margin: 10px 0;
+  border-top: 0.7rch dotted;
+  border-bottom: none;
+  border-color: darkgreen;
+}
+
+body {
+  margin: 0;
+  padding: 4%;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  color: #16a085;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #16a085;
+  margin-left: 20px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #16a085;
+  margin: 10px 0;
 }
 
 h4 {
-    text-align: center;
+  text-align: center;
 }
 
-a{
-    text-decoration: none;
-    color: inherit; /* Setzt die Linkfarbe auf die Standardtextfarbe */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 7px;
-    width: calc(50% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
-    height: 100%;
-    display: inline-block;
-    vertical-align: top;
-    overflow: hidden;
-    align-items: stretch; 
-    margin: 1%;
-   ; /* Fester Abstand um jede Karte */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 7px;
+  width: calc(50% - 20px);
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  align-items: stretch;
+  margin: 1%;
+  ;
 }
 
 img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 7px 7px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 7px 7px 0 0;
 }
 
 .card-content {
-    padding: 20px;
-    box-sizing: border-box;
-    height: calc(100% - 200px);
-    display: flex;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* Erlaubt den Karten, in die nächste Zeile zu springen, wenn der Platz in der aktuellen Zeile aufgebraucht ist */
-    align-content: space-around;
-    align-items: center;
-    text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  height: calc(100% - 200px);
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
 .card:hover {
@@ -84,27 +84,25 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
-    .card {
-      width: calc(100% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
-    }
+  .card {
+    width: calc(100% - 20px);
   }
-  
-  @media only screen and (min-width: 601px) and (max-width: 1200px) {
-    .card {
-      width: calc(50% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
-    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .card {
+    width: calc(50% - 20px);
   }
-  
-  @media only screen and (min-width: 901px) and (max-width: 1200px) {
-    .card {
-      width: calc(33% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
-    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .card {
+    width: calc(33% - 20px);
   }
-  
-  @media only screen and (min-width: 1201px) {
-    .card {
-      width: calc(25% - 20px); /* Berechnete Breite, um Platz für den Abstand zu lassen */
-    }
+}
+
+@media only screen and (min-width: 1201px) {
+  .card {
+    width: calc(25% - 20px);
   }
-  
-  
+}

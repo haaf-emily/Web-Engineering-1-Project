@@ -4,19 +4,19 @@ header {
   align-items: center;
   padding: 20px;
   background-color: #f0f0f0;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); /* Schatten unter der ganzen Seite */
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .logo {
-  font-size: 24px; /* Schriftgröße für den Platzhalter */
+  font-size: 24px; 
 }
 
 .home-link {
-  display: block; /* Block-Element, damit es unter dem Logo erscheint */
-  font-size: 14px; /* Schriftgröße für den Link */
-  margin-top: 5px; /* Abstand zwischen Logo und Link */
-  color: blue; /* Farbe des Links */
-  text-decoration: underline; /* Unterstreichung des Links */
+  display: block; 
+  font-size: 14px; 
+  margin-top: 5px; 
+  color: blue; 
+  text-decoration: underline; 
 }
 
 .line-divider {
@@ -26,10 +26,10 @@ header {
 }
 
 .line {
-  width: 20px; /* Breite der Striche */
-  height: 2px; /* Höhe der Striche */
+  width: 20px; 
+  height: 2px; 
   background-color: black;
-  margin-bottom: 5px; /* Abstand zwischen den Strichen */
+  margin-bottom: 5px; 
 }
 
 .icons {
@@ -38,7 +38,7 @@ header {
 }
 
 .navigation {
-  margin-right: 20px; /* Abstand zwischen Navigation und Einkaufsliste */
+  margin-right: 20px; 
 }
 
 .navigation ul {
@@ -46,8 +46,8 @@ header {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column; /* Navigationspunkte untereinander anordnen */
-  gap: 10px; /* Abstand zwischen den Navigationspunkten */
+  flex-direction: column; 
+  gap: 10px; 
 }
 
 .navigation li {
@@ -64,22 +64,22 @@ header {
 .weekly-plan {
   border: 1px solid black;
   padding: 10px;
-  max-width: 150px; /* Maximalbreite der Blöcke */
+  max-width: 150px; 
 }
 
 .shopping-list h2,
 .weekly-plan h2 {
-  font-size: 16px; /* Schriftgröße anpassen */
-  margin: 0; /* Standardmäßigen Abstand entfernen */
+  font-size: 16px; 
+  margin: 0; 
 }
 
 .shopping-list {
-  margin-left: 20px; /* Abstand zwischen Navigation und Einkaufsliste */
-  margin-right: 20px; /* Abstand zwischen Einkaufsliste und Wochenplan */
+  margin-left: 20px; 
+  margin-right: 20px;
 }
 
 .weekly-plan {
-  margin-right: 20px; /* Abstand zwischen Einkaufsliste und Wochenplan */
+  margin-right: 20px; 
 }
 
 .list-item {
@@ -100,7 +100,7 @@ header {
   flex: 1;
   height: 1px;
   background-color: black;
-  margin-right: 10px; /* Abstand zwischen Linie und Text */
+  margin-right: 10px;
 }
 
 .week {
@@ -116,9 +116,9 @@ header {
 }
 
 .circle {
-  width: 20px; /* Durchmesser der Kreise */
+  width: 20px; 
   height: 20px;
-  border: 1px solid black; /* Grenzfarbe setzen */
+  border: 1px solid black; 
   border-radius: 50%;
 }
 

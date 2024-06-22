@@ -2,7 +2,7 @@
 
 body {
   line-height: 1.5;
-  color: #000000; /* Schwarzer Text für gute Lesbarkeit */
+  color: #000000; 
   font-family: 'Poppins', sans-serif;
 }
 
@@ -23,9 +23,9 @@ body {
 }
 
 .footer {
-  background-color: #ffffff; /* Weiß als Hauptfarbe */
+  background-color: #ffffff; 
   padding: 70px 0;
-  border-top: 1px solid #e0e0e0; /* Dünne graue Linie oben */
+  border-top: 1px solid #e0e0e0; 
   
 }
 
@@ -36,7 +36,7 @@ body {
 
 .footer-col h4 {
   font-size: 18px;
-  color: #006400; /* Dunkelgrüner Text */
+  color: #006400; 
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500;
@@ -48,7 +48,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #006400; /* Dunkelgrün für Akzent */
+  background-color: #006400; 
   height: 2px;
   width: 50px;
 }
@@ -60,7 +60,7 @@ body {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: #006400; /* Dunkelgrüner Text */
+  color: #006400; 
   text-decoration: none;
   font-weight: 300;
   display: block;
@@ -68,7 +68,7 @@ body {
 }
 
 .footer-col ul li a:hover {
-  color: #00ff00; /* Helles Grün beim Hover */
+  color: #00ff00; 
   padding-left: 8px;
 }
 
@@ -76,41 +76,41 @@ body {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: rgba(0, 100, 0, 0.1); /* Helles Dunkelgrün mit 10% Opazität */
+  background-color: rgba(0, 100, 0, 0.1); 
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #006400; /* Dunkelgrüner Text */
+  color: #006400; 
   transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
-  color: #ffffff; /* Weißer Text beim Hover */
-  background-color: #006400; /* Dunkelgrüner Hintergrund beim Hover */
-  transform: scale(1.1); /* Leichte Vergrößerung beim Hover */
+  color: #ffffff; 
+  background-color: #006400; 
+  transform: scale(1.1);
 }
 
 .footer-bottom {
-  background-color: #f9f9f9; /* Heller Hintergrund für unteren Bereich */
+  background-color: #f9f9f9; 
   padding: 20px 0;
   text-align: center;
-  color: #000000; /* Schwarzer Text */
-  border-top: 1px solid #e0e0e0; /* Dünne graue Linie oben */
+  color: #000000; 
+  border-top: 1px solid #e0e0e0;
   font-size: 14px;
 }
 
 .footer-bottom a {
-  color: #006400; /* Dunkelgrüne Links */
+  color: #006400; 
   text-decoration: none;
   font-weight: 500;
 }
 
 .footer-bottom a:hover {
-  color: #00ff00; /* Helles Grün beim Hover */
+  color: #00ff00; 
 }
 
-/* Responsive */
+
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
