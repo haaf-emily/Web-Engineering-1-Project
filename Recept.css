@@ -1,14 +1,10 @@
 body {
-    margin: 20px;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
 }
 
 h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
     color: #333;
     text-align: center;
     margin-bottom: 30px;
@@ -17,8 +13,6 @@ h1 {
 }
 
 h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
     font-style: normal;
     color: #009879;
     margin-bottom: 15px;
@@ -54,8 +48,6 @@ ol li {
 
 ol li::before {
     content: counter(item); 
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
     color: #009879;
     display: inline-block;
     width: 2em; 
@@ -66,15 +58,6 @@ ol li::before {
     left: 0; 
 }
 
-ul {
-    list-style-type: disc; /* Zeigt Aufzählungspunkte */
-}
-
-li {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 table {
     width: 100%;
