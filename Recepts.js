@@ -1,3 +1,13 @@
+function showNotification(message) {
+    const notification = document.getElementById('notification');
+    notification.innerText = message;
+    notification.style.display = 'block';
+
+    setTimeout(() => {
+        notification.style.display = 'none';
+    }, 3000);
+}
+
 function addToShoppingList() {
     const rezeptTitel = document.getElementById('rezept-titel').innerText;
     const zutatenTabelle = document.getElementById('zutaten-tabelle').getElementsByTagName('tr');
@@ -12,6 +22,8 @@ function addToShoppingList() {
 
     einkaufsliste.push({ titel: rezeptTitel, zutaten: zutaten });
     localStorage.setItem('einkaufsliste', JSON.stringify(einkaufsliste));
+
+    showNotification('Das Rezept wurde zur Einkaufsliste hinzugefügt!');
 }
 
 function loadShoppingList() {
