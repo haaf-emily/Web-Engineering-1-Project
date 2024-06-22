@@ -58,6 +58,11 @@ ol li::before {
     left: 0; 
 }
 
+ul{
+    list-style-type: disc;
+    margin-left: 5%;
+}
+
 
 table {
     width: 100%;
