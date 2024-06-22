@@ -4,7 +4,9 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
 }
-
+main {
+    margin-top: 5em; /* Passen Sie diesen Wert entsprechend der Höhe Ihres Headers an */
+}
 .timeline {
     display: flex;
     flex-direction: column;

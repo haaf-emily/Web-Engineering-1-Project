@@ -51,7 +51,7 @@ header {
 }
 
 .navigation li {
-  margin: 0;
+  margin: 0%;
 }
 
 .navigation a {
@@ -132,4 +132,35 @@ header {
 
 .abbreviation {
   font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+}
+
+/* Für Tablets im Querformat */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+}
+
+/* Für Tablets im Hochformat und kleine Desktops */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  body {
+      margin-left: 6%;
+      margin-right: 6%;
+  }
+}
+
+/* Für größere Desktops */
+@media only screen and (min-width: 1201px) {
+  body {
+      margin-left: 20%;
+      margin-right: 20%;
+  }
 }

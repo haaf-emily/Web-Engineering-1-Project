@@ -1,7 +1,5 @@
 body {
   margin: 2% 1% 2% 1%;  
-  font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
 }
 
 a {
@@ -121,7 +119,7 @@ a {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 75em) {
   .header li {
     float: left;
   }
@@ -138,3 +136,33 @@ a {
   }
 }
 
+
+@media only screen and (max-width: 600ch) {
+  body {
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+}
+
+/* Für Tablets im Querformat */
+@media only screen and (min-width: 601ch) and (max-width: 900ch) {
+  body {
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+}
+
+/* Für Tablets im Hochformat und kleine Desktops */
+@media only screen and (min-width: 901ch) and (max-width: 1500ch) {
+  body {
+      margin-left: 6%;
+      margin-right: 6%;
+  }
+}
+/* Für größere Desktops */
+@media only screen and (min-width: 1501ch) {
+  body {
+      margin-left: 20%;
+      margin-right: 20%;
+  }
+}
