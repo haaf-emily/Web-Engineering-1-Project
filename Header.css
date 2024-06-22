@@ -1,8 +1,7 @@
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   background-color: #f0f0f0;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
 }
@@ -141,7 +140,7 @@ header {
   }
 }
 
-/* Für Tablets im Querformat */
+/* Für Tablets im Querformat */                                                                                                                                                                                                                  
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   body {
       margin-left: 2%;

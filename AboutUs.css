@@ -1,12 +1,9 @@
 body {
     line-height: 1.6;
     color: #333;
-    padding: 20px;
     background-color: #f4f4f4;
 }
-main {
-    margin-top: 5em; 
-}
+
 .timeline {
     display: flex;
     flex-direction: column;
@@ -16,6 +13,7 @@ main {
 
 .about-section {
     margin-bottom: 5ch;
+    padding-top: 10em;
 }
 
 .event {
