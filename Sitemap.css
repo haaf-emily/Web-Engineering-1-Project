@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@ h1 {
 #sitemapContent {
     background-color: #fff;
     border-radius: 5px;
-    padding: 20px;
+    padding: 1em 0.4em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -44,18 +44,18 @@ h1 {
 
 #sitemapContent ul ul {
     list-style-type: circle;
-    padding-left: 60px; 
+    padding-left: 10%; 
 }
 
 #sitemapContent ul ul li {
-    padding-left: 10px;
+    padding-left: 2%;
 }
 
 #sitemapContent ul ul ul {
     list-style-type: square;
-    padding-left: 80px;
+    padding-left: 15%;
 }
 
 #sitemapContent ul ul ul li {
-    padding-left: 10px;
+    padding-left: 2%;
 }
