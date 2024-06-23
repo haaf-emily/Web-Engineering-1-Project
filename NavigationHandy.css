@@ -132,7 +132,7 @@ a {
 }
 
 
-@media only screen and (max-width: 600ch) {
+@media only screen and (max-width: 600px) {
   body {
       margin-left: 2%;
       margin-right: 2%;
@@ -140,7 +140,7 @@ a {
 }
 
 /* Für Tablets im Querformat */
-@media only screen and (min-width: 601ch) and (max-width: 900ch) {
+@media only screen and (min-width: 601px) and (max-width: 900px) {
   body {
       margin-left: 2%;
       margin-right: 2%;
@@ -148,14 +148,14 @@ a {
 }
 
 /* Für Tablets im Hochformat und kleine Desktops */
-@media only screen and (min-width: 901ch) and (max-width: 1500ch) {
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
   body {
       margin-left: 6%;
       margin-right: 6%;
   }
 }
 /* Für größere Desktops */
-@media only screen and (min-width: 1501ch) {
+@media only screen and (min-width: 1201px) {
   body {
       margin-left: 20%;
       margin-right: 20%;
