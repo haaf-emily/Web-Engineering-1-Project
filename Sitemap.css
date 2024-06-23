@@ -13,6 +13,7 @@ main {
 h1 {
     text-align: center;
     color: #008000;
+    padding-top: 5em;
 }
 
 #sitemapContent {
